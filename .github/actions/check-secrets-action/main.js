@@ -1,7 +1,7 @@
 const core = require("@actions/core");
 const github = require("@actions/github");
 const gradeLearner = require("./lib/gradeLearner");
-
+ echo "Deploying to production server on branch ";
 async function run() {
   try {
     const token = core.getInput("your-secret");
